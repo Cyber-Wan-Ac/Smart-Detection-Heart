@@ -11,8 +11,8 @@ import {
   Tooltip,
   Legend,
 } from 'chart.js';
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "./components/ui/button";
+import { Card, CardContent } from "./components/ui/card";
 import { Download, Stethoscope } from 'lucide-react';
 import jsPDF from 'jspdf';
 import autoTable from 'jspdf-autotable';
