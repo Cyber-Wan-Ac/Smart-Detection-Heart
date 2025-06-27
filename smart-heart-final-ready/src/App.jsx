@@ -59,12 +59,15 @@ export default function App() {
     ],
   };
 
-  const BackgroundWrapper = ({ children }) => (
-    <div className="relative">
-      <div className="absolute inset-0 bg-[url('/heart-bg.jpg')] bg-cover bg-center opacity-10 z-0" />
-      <div className="relative z-10">{children}</div>
-    </div>
-  );
+const BackgroundWrapper = ({ children }) => (
+  <div className="relative">
+    <div
+      className="absolute inset-0 bg-cover bg-center opacity-10 z-0"
+      style={{ backgroundImage: "url('/heart-bg.jpg')" }}
+    />
+    <div className="relative z-10">{children}</div>
+  </div>
+);
 
   const renderHome = () => (
     <div className="text-center py-40 bg-cover bg-center" style={{ backgroundImage: 'url(/pulse-bg.jpg)' }}>
